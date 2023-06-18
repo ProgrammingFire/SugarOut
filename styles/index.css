@@ -1,0 +1,95 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-scrollbar-track-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white;
+}
+
+.header-tooltip {
+  @apply absolute translate-x-0 scale-0 w-auto p-2 ml-1 min-w-max top-14 rounded-md shadow-md
+    text-white bg-purple-600 
+    text-xs font-bold select-none
+    transition-all duration-100 origin-top;
+}
+
+::selection {
+  @apply bg-blue-900 text-white
+}
+
+.menu-icon {
+  display: none;
+}
+
+.tooltip-green {
+  @apply text-white bg-green-600
+}
+
+.tooltip-red {
+  @apply text-white bg-red-600
+}
+
+.tooltip-blue {
+  @apply text-white bg-blue-600
+}
+
+body {
+  @apply bg-dark;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-img {
+  transition: 0.5s;
+}
+
+.card {
+  font-family: "Poppins", sans-serif;
+}
+
+.card-btn {
+  @apply py-4 mb-9 w-4/5 bg-blue-300 text-black rounded shadow-lg text-lg font-bold hover:drop-shadow-2xl hover:translate-y-[-3px] transition-all focus:ring-4 focus:ring-blue-600;
+}
+
+.nav-list {
+  display: block;
+}
+
+#dropdown {
+  opacity: 0;
+}
+
+.dropdown-btn:focus #dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-shadow {
+  box-shadow: 4px 0 20px -3px #010101;
+}
+
+@media screen and (max-width: 760px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+  .menu-list{ 
+    display: flex;
+  }
+}
