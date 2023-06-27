@@ -22,13 +22,13 @@
 
 .header-tooltip {
   @apply absolute translate-x-0 scale-0 w-auto p-2 ml-1 min-w-max top-14 rounded-md shadow-md
-    text-white bg-purple-600 
+    text-dark bg-purple-600 
     text-xs font-bold select-none
     transition-all duration-100 origin-top;
 }
 
 ::selection {
-  @apply bg-blue-900 text-white
+  @apply bg-blue-900 text-white;
 }
 
 .menu-icon {
@@ -36,15 +36,15 @@
 }
 
 .tooltip-green {
-  @apply text-white bg-green-600
+  @apply text-white bg-green-900;
 }
 
 .tooltip-red {
-  @apply text-white bg-red-600
+  @apply text-white bg-red-900;
 }
 
 .tooltip-blue {
-  @apply text-white bg-blue-600
+  @apply text-white bg-blue-900;
 }
 
 body {
@@ -61,7 +61,7 @@ body {
 }
 
 .card-btn {
-  @apply py-4 mb-9 w-4/5 bg-blue-300 text-black rounded shadow-lg text-lg font-bold hover:drop-shadow-2xl hover:translate-y-[-3px] transition-all focus:ring-4 focus:ring-blue-600;
+  @apply py-4 mb-9 w-4/5 bg-blue-900 text-white rounded shadow-lg text-lg font-bold hover:drop-shadow-2xl hover:translate-y-[-3px] transition-all focus:ring-4 focus:ring-blue-600;
 }
 
 .nav-list {
@@ -89,7 +89,7 @@ body {
   .menu-icon {
     display: flex;
   }
-  .menu-list{ 
+  .menu-list {
     display: flex;
   }
 }

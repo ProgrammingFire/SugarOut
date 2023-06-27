@@ -9,8 +9,8 @@ export default function MenuItem({ url, name }) {
           <button
             className={`${
               active
-                ? "bg-blue-300 border-4 border-transparent text-dark"
-                : " border-blue-300 border-4 text-white"
+                ? "bg-blue-900 border-4 border-transparent text-white"
+                : " border-blue-900 border-4 text-dark"
             } group my-1 flex justify-center font-bold w-full items-center rounded-md px-2 py-4 text-md`}
           >
             {name}

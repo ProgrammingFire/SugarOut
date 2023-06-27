@@ -5,7 +5,7 @@ import "../styles/index.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="dark bg-dark text-white">
+    <div className="bg-light text-dark">
       <Header />
       <Layout>
         <Component {...pageProps} />

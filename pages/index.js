@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <div>
       <PopupOffer />
-      <div class="flex flex-col hero mb-32 items-center text-white flex-wrap-reverse">
+      <div class="flex flex-col hero mb-32 items-center  flex-wrap-reverse">
         <div class="p-8 mb-8 rounded-md">
           {" "}
           <img src="https://i.imgur.com/LwF0Tjg.png" class="rounded "></img>
@@ -14,7 +14,7 @@ export default function Index() {
           <h1 class="text-4xl text-center mb-3 font-bold">
             DIABETES MANAGEMENT LEVELED UP
           </h1>
-          <p class="text-gray-300 text-center">
+          <p class="text-gray-900 text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
             repudiandae et impedit quo consectetur est provident porro fugiat
             officiis quae dolores optio quia nulla placeat, officia recusandae

@@ -7,7 +7,7 @@ export default function HeaderMenu() {
   return (
     <div className="">
       <Menu as="div" className="">
-        <li class="menu-icon dark:text-gray-400 inline-flex w-full justify-center text-gray-500 hover:text-black group cursor-pointer dark:hover:text-white transition-all">
+        <li class="menu-icon dark:text-gray-400 inline-flex w-full justify-center text-gray-600 hover:text-black group cursor-pointer dark:hover:text-dark transition-all">
           <Menu.Button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function HeaderMenu() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute top-[4.5rem] right-3 mt-2 w-56 shadow-lg shadow-gray-800 origin-top-right rounded-md bg-gray-800  ring-1 ring-black ring-opacity-5 text-white focus:outline-none">
+          <Menu.Items className="absolute top-[4.5rem] right-3 mt-2 w-56 shadow-lg shadow-gray-800 origin-top-right rounded-md bg-gray-100  ring-1 ring-black ring-opacity-5 text-dark focus:outline-none">
             <div className="px-1 py-1">
               <MenuItem name="Products" url="/products" />
               <MenuItem name="Services" url="/services" />

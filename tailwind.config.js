@@ -57,6 +57,7 @@ module.exports = {
         },
         footer: {
           dark: "#1c1c21",
+          light: "#e3e3e3",
         },
       },
       spacing: {
