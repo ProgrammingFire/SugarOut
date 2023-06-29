@@ -36,7 +36,7 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody videoUrl={post.videoUrl} content={post.content} />
+              <PostBody content={post.content} />
             </article>
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
