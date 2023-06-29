@@ -15,7 +15,7 @@ export default function Services({ services }) {
       <Container>
         <div className="grid grid-cols-2 gap-8 justify-center">
           {services.map((service) => (
-            <div class="flex card flex-col items-center justify-center rounded-lg bg-white p-5">
+            <div class="flex card flex-col items-center shadow-lg justify-center rounded-lg bg-white p-5">
               <h1 class="m-auto text-center max-w-xs  text-xl font-medium">
                 {service.title}
               </h1>
