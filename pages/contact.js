@@ -86,7 +86,7 @@ const Contact = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
                 <form
-                  action="https://formsubmit.co/nouman.rahman2010@gmail.com"
+                  action="https://formsubmit.co/sugarout.in@gmail.com"
                   method="POST"
                 >
                   <ContactInputBox
