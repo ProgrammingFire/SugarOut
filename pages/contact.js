@@ -35,7 +35,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      786, Lalten Factory, Kaila Bhatta, Ghaziabad
                     </p>
                   </div>
                 </div>
@@ -56,9 +56,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color">
-                      (+62)81 414 257 9980
-                    </p>
+                    <p className="text-base text-body-color">+91 7078360430</p>
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
@@ -77,7 +75,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                      info@yourdomain.com
+                      sugarout.in@gmail.com
                     </p>
                   </div>
                 </div>

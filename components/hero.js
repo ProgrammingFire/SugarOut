@@ -14,9 +14,7 @@ const Hero = () => {
                   DIABETES MANAGEMENT AND CONTROL LEVELED UP!
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color">
-                  With TailGrids, business and students thrive together.
-                  Business can perfectly match their staffing to changing demand
-                  throughout the dayed.
+                Sugarout is a food product brand that provides Low Glycemic load food products for persons willing to manage their blood sugar levels. The glycemic load of a food item is an important nutritional parameter because it can suggest how much blood sugar level will rise after eating a particular amount of food. One must control his daily dietary glycemic load for better blood sugar control.
                 </p>
                 <ul className="flex flex-wrap items-center">
                   <li>
@@ -95,9 +93,9 @@ const Hero = () => {
               <div className="lg:ml-auto lg:text-right">
                 <div className="relative z-10 inline-block pt-11 lg:pt-0">
                   <img
-                    src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
+                    src="/hero-image.png"
                     alt="hero"
-                    className="max-w-full lg:ml-auto"
+                    className="max-w-full rounded-3xl bg-blue-800  shadow-xl lg:ml-auto"
                   />
                   <span className="absolute -left-8 -bottom-8 z-[-1]">
                     <svg
