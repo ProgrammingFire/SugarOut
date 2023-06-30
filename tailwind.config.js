@@ -43,6 +43,7 @@ module.exports = {
         red: {
           300: "#FF8888",
         },
+        primary: colors.blue[800],
         dark: "#111114",
         light: "#f5f5f5",
         nav: {

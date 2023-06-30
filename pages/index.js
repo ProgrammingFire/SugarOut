@@ -1,30 +1,59 @@
+import Cta from "components/cta";
+import Hero from "components/hero";
+import MoreProducts from "components/more-products";
+import MoreStories from "components/more-stories";
 import PopupOffer from "components/popup-offer";
+import Video from "components/video-hero";
+import WhatWeOffer from "components/what-we-offer";
+import { getPostsAndProductsForHome } from "lib/graphcms";
 
-export default function Index() {
+export default function Index({ posts, products }) {
   return (
     <div>
       <PopupOffer />
-      <div class="flex flex-col hero mb-32 items-center  flex-wrap-reverse">
-        <div class="p-8 mb-8 rounded-md">
-          {" "}
-          <img src="https://i.imgur.com/LwF0Tjg.png" class="rounded "></img>
-        </div>
-
-        <div class="w-3/4">
-          <h1 class="text-4xl text-center mb-3 font-bold">
-            DIABETES MANAGEMENT LEVELED UP
-          </h1>
-          <p class="text-gray-900 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            repudiandae et impedit quo consectetur est provident porro fugiat
-            officiis quae dolores optio quia nulla placeat, officia recusandae
-            iusto quod pariatur similique minus odit ipsam aperiam! Odio
-            delectus sit perferendis, nisi necessitatibus eaque autem nihil ex,
-            quia ducimus beatae atque pariatur, inventore eos similique est in!
-            Neque veniam iure porro quaerat!
-          </p>
+      <Hero />
+      <Cta />
+      <Video />
+      <WhatWeOffer />
+      <div className="container">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+                Our Recent Articles
+              </h2>
+              <p className="text-base text-body-color">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <MoreStories posts={posts} />
+      <div className="container">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+                Our Products
+              </h2>
+              <p className="text-base text-body-color">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <MoreProducts products={products} />
     </div>
   );
+}
+
+export async function getStaticProps({ preview = false }) {
+  const { posts, products } = (await getPostsAndProductsForHome(preview)) || [];
+  return {
+    props: { posts, products },
+  };
 }

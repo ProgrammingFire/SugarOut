@@ -1,4 +1,5 @@
 import { Dialog, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 
 export default function PopupOffer() {
@@ -70,15 +71,16 @@ export default function PopupOffer() {
                       className="inline-flex justify-center rounded-md border border-transparent bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      No, Thanks You!
+                      No Thanks!
                     </button>
-                    <button
-                      type="button"
-                      className="inline-flex ml-4 justify-center rounded-md border border-transparent bg-blue-900 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Sure, I will!
-                    </button>
+                    <Link href={"/contact"}>
+                      <button
+                        type="button"
+                        className="inline-flex ml-4 justify-center rounded-md border border-transparent bg-blue-900 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
+                      >
+                        Sure!
+                      </button>
+                    </Link>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

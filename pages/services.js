@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 import { TITLE } from "../lib/constants";
 import { Popover } from "@headlessui/react";
+import Link from "next/link";
 
 export default function Services({ services }) {
   return (
@@ -28,7 +29,7 @@ export default function Services({ services }) {
               <span class="mt-5 text-2xl font-bold px-2 text-center max-w-5">
                 ₹{service.offerPrice}/-
               </span>
-              <Popover class="w-full flex flex-col items-center">
+              {/* <Popover class="w-full flex flex-col items-center">
                 <Popover.Button class="card-btn mt-5">BOOK NOW!</Popover.Button>
                 <Transition
                   as={Fragment}
@@ -43,7 +44,10 @@ export default function Services({ services }) {
                     Contact at +91 7078360430
                   </Popover.Panel>
                 </Transition>
-              </Popover>
+              </Popover> */}
+              <Link href="/contact">
+                <button class="card-btn mt-5">BOOK NOW!</button>
+              </Link>
             </div>
           ))}
         </div>
