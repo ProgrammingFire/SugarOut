@@ -1,8 +1,13 @@
+import { TITLE } from "lib/constants";
+import Head from "next/head";
 import React from "react";
 
 const Contact = () => {
   return (
     <>
+    <Head>
+      <title>{"Contact" + TITLE}</title>
+    </Head>
       <section className=" py-20 lg:py-[120px] overflow-hidden relative z-10">
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">

@@ -1,6 +1,12 @@
+import { TITLE } from "lib/constants";
+import Head from "next/head";
+
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>{"About" + TITLE}</title>
+      </Head>
       <section className="pt-4 lg:pt-4 pb-12 lg:pb-[90px] overflow-hidden">
         <div className="container">
           <div className="flex flex-wrap items-center justify-between -mx-4">

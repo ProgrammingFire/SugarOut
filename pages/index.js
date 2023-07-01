@@ -3,13 +3,18 @@ import Hero from "components/hero";
 import MoreProducts from "components/more-products";
 import MoreStories from "components/more-stories";
 import PopupOffer from "components/popup-offer";
+import Head from "next/head";
 import Video from "components/video-hero";
 import WhatWeOffer from "components/what-we-offer";
+import { TITLE } from "lib/constants";
 import { getPostsAndProductsForHome } from "lib/graphcms";
 
 export default function Index({ posts, products }) {
   return (
     <div>
+      <Head>
+        <title>{"Home" + TITLE}</title>
+      </Head>
       <PopupOffer />
       <Hero />
       <Cta />
