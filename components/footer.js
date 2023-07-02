@@ -19,7 +19,7 @@ export default function Footer() {
         <a
           className="text-white font-bold hover:underline"
           target="_blank"
-          href="https://github.com/programmingfire"
+          href="https://twitter.com/programmingfire"
         >
           <span>Nouman Rahman</span>
         </a>
